@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <style>
+        body {
+            background-color: #1b1c30;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            color: #fff;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input {
+            background-color: #2a2b38;
+            color: #fff;
+            border: none;
+            padding: 12px 40px;
+            margin: 10px 0;
+            border-radius: 15px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #77c97b;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            margin-top: 10px;
+            border-radius: 20px;
+            width: 180px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        .signup {
+            margin-top: 10px;
+        }
+
+        .signup a {
+            color: aquamarine;
+            text-decoration: none;
+        }
+
+        .signup a:hover {
+            text-decoration: underline;
+        }
+
+        .navegacao_paginas {
+            margin-top: 20px;
+        }
+
+        
+        .navegacao_paginas {
+            display: flex;
+        }
+
+        .navegacao_paginas a {
+            margin: 40px 0px 0px 25px;
+            color: #77c97b;
+            font-size: 15px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .navegacao_paginas a:hover {
+            color: aquamarine;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>LOGIN</h1>
+        <form action="#">
+            <input type="email" placeholder="Digite seu email" required>
+            <input type="password" placeholder="Digite sua senha" required>
+            <p class="signup">Ainda não tem uma conta? <a href="#">Crie uma</a></p>
+            <button type="submit">Entrar</button>
+        </form>
+        <div class="navegacao_paginas">
+            <a href="index.html">ChatGPT</a>
+            <a href="deepseek.html">DeepSeek</a>
+            <a href="gemini.html">Gemini</a>
+        </div>
+    </div>
+</body>
+
+</html>
